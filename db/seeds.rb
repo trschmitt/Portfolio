@@ -24,8 +24,8 @@ end
 
 puts "5 skills created"
 
-9.times do |application|
-  Application.create!(
+9.times do |project|
+  Project.create!(
     title: "Application Title #{application}",
     subtitle: "My great service",
     body: "Cupcake ipsum dolor sit amet. Muffin candy canes muffin soufflé oat cake I love macaroon. Pie candy canes chocolate bar caramels cheesecake. Chocolate marshmallow donut cotton candy lollipop gingerbread marshmallow lollipop. I love tootsie roll caramels biscuit I love topping gummi bears apple pie. Candy topping jelly-o jelly beans. Pastry pie I love. Chocolate marshmallow bonbon brownie.",
@@ -34,4 +34,4 @@ puts "5 skills created"
   )
 end
 
-puts "9 applications created"
+puts "9 Projects created"
