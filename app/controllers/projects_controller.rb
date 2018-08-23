@@ -4,6 +4,10 @@ class ProjectsController < ApplicationController
     @projects = Project.all
   end
 
+  def show
+    @project = Project.find(params[:id])
+  end
+
   def new
     @project = Project.new
   end
@@ -36,9 +40,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def show
-    @project = Project.find(params[:id])
-  end
 
   def destroy
     @project = Project.find(params[:id])
@@ -49,5 +50,13 @@ class ProjectsController < ApplicationController
     end
   end
 
+  private
+    def set_project
+      #code
+    end
+
+    def project_params
+      #code
+    end
 
 end
