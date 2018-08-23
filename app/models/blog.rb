@@ -6,6 +6,10 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
+  #Data Validation
   validates_presence_of :title, :body
+
+  #Topics Relationship
+  belongs_to :topic
 
 end
