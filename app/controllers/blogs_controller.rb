@@ -52,9 +52,7 @@ class BlogsController < ApplicationController
       @blog.draft!
     end
 
-    respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog status has been updated'}
-    end
+    redirect_to blogs_url, notice: 'Blog status has been updated'
 
   end
 
