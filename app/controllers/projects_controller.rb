@@ -4,6 +4,10 @@ class ProjectsController < ApplicationController
     @projects = Project.all
   end
 
+   def angular
+     @angular_projects = Project.angular_js_projects
+   end
+
   def show
     @project = Project.find(params[:id])
   end
