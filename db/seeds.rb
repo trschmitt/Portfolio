@@ -39,7 +39,7 @@ puts "5 skills created"
     subtitle: "Ruby on Rails",
     body: "Cupcake ipsum dolor sit amet. Muffin candy canes muffin soufflé oat cake I love macaroon. Pie candy canes chocolate bar caramels cheesecake. Chocolate marshmallow donut cotton candy lollipop gingerbread marshmallow lollipop. I love tootsie roll caramels biscuit I love topping gummi bears apple pie. Candy topping jelly-o jelly beans. Pastry pie I love. Chocolate marshmallow bonbon brownie.",
     main_image: "https://via.placeholder.com/600x400",
-    thumb_image:"https://via.placeholder.com/350x200"
+    thumb_image: "https://via.placeholder.com/350x200"
   )
 end
 
@@ -49,7 +49,7 @@ end
     subtitle: "Angular.js",
     body: "Cupcake ipsum dolor sit amet. Muffin candy canes muffin soufflé oat cake I love macaroon. Pie candy canes chocolate bar caramels cheesecake. Chocolate marshmallow donut cotton candy lollipop gingerbread marshmallow lollipop. I love tootsie roll caramels biscuit I love topping gummi bears apple pie. Candy topping jelly-o jelly beans. Pastry pie I love. Chocolate marshmallow bonbon brownie.",
     main_image: "https://via.placeholder.com/600x400",
-    thumb_image:"https://via.placeholder.com/350x200"
+    thumb_image: "https://via.placeholder.com/350x200"
   )
 end
 
