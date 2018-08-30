@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  
   resources :projects, except: [:show]
   get 'angular-projects', to: 'projects#angular'
   get 'project/:id', to: 'projects#show', as: 'project_show'
