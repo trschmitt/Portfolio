@@ -1,11 +1,7 @@
 class ApplicationController < ActionController::Base
 
-  # Used to call the Devise Whitelist Concern Controller
+  ## Used to call the Concern Controllers
   include DeviseWhitelist
+  include SetSource
 
-  before_action :set_source
-
-  def set_source
-    session[:source] = params[:q] if params[:q]
-  end
 end
