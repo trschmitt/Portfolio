@@ -22,7 +22,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(params.require(:project).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @project = Project.new(project_params)
 
     respond_to do |format|
       if @project.save
@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
 
     respond_to do |format|
-      if @project.update(params.require(:project).permit(:title, :subtitle, :body))
+      if @project.update(project_params)
         format.html { redirect_to projects_path, notice: 'Project was successfully updated.' }
       else
         format.html { render :edit }
@@ -61,7 +61,11 @@ class ProjectsController < ApplicationController
     end
 
     def project_params
-      #code
+      params.require(:project).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                      technologies_attributes: [:name]
+                                    )
     end
 
 end
