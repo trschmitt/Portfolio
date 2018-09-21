@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @page_title = "Tristan's Projects"
   end
 
    def angular
@@ -11,15 +12,22 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    
+    @page_title = @project.title
+    @seo_keywords = @project.title
   end
 
   def new
     @project = Project.new
     3.times { @project.technologies.build }
+
+    @page_title = "New Project"
   end
 
   def edit
     @project = Project.find(params[:id])
+
+    @page_title = "Edit #{@project.title }"
   end
 
   def create

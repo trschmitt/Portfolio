@@ -14,9 +14,11 @@ class BlogsController < ApplicationController
 
   def new
     @blog = Blog.new
+    @page_title = "New Blog"
   end
 
   def edit
+    @page_title = "Edit #{@blog.title }"
   end
 
   def create
