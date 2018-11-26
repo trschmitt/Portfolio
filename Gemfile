@@ -73,3 +73,5 @@ gem 'devise', '~> 4.5'
 gem 'bootstrap', '~> 4.1.3'
 # Bootstrap needs JQuery to work
 gem 'jquery-rails'
+
+gem 'schmitt_view_tool', git: 'https://github.com/trschmitt/schmitt_view_tool'

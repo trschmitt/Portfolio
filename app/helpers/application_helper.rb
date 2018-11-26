@@ -19,4 +19,8 @@ module ApplicationHelper
      end
   end
 
+  def copyright_generator
+    SchmittViewTool::Renderer.copyright 'Tristan Schmitt', 'All Rights Reserved'
+  end
+
 end

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/trschmitt/schmitt_view_tool
+  revision: 20fffbf30d8262812c5ab3094b2417a41cb3abb6
+  specs:
+    schmitt_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -241,6 +247,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.1)
   sass-rails (~> 5.0)
+  schmitt_view_tool!
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
