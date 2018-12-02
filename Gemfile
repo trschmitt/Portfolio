@@ -74,10 +74,7 @@ gem 'bootstrap', '~> 4.1.3'
 # Bootstrap needs JQuery to work
 gem 'jquery-rails'
 
-# Rack XSS vulnerability
-gem "rack", ">= 2.0.6"
-
-# In the Loofah gem for Ruby, through version 2.2.2, unsanitized JavaScript may occur in sanitized output when a crafted SVG element is republished. Users are advised to upgrade to version 2.2.3.
-gem "loofah", ">= 2.2.3"
-
 gem 'schmitt_view_tool', git: 'https://github.com/trschmitt/schmitt_view_tool'
+
+# Authorization Petergate gem
+gem 'petergate', '~> 2.0', '>= 2.0.1'
